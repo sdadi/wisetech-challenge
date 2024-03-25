@@ -6,14 +6,23 @@ namespace hackerrank
     {
         static void Main(string[] args)
         {
-            //FizzBuzz.Run();
-            //StaleServerCount.Run();
             DateTime start = DateTime.Now;
-            LowestSalePrice.RunBruteForce();
-            Console.WriteLine((DateTime.Now - start).TotalMicroseconds);
+            //FizzBuzz.Run();
+
             start = DateTime.Now;
-            LowestSalePrice.Run();
-            Console.WriteLine((DateTime.Now - start).TotalMicroseconds);
+            StaleServerCount.RunBruteforce();
+            Console.WriteLine("Brute force: "+(DateTime.Now - start).TotalMicroseconds);
+            StaleServerCount.Run();
+            start = DateTime.Now;
+            Console.WriteLine("Optimize :"+(DateTime.Now - start).TotalMicroseconds);
+
+            //start = DateTime.Now;
+            //LowestSalePrice.RunBruteForce();
+            //Console.WriteLine((DateTime.Now - start).TotalMicroseconds);
+            //start = DateTime.Now;
+            //LowestSalePrice.Run();
+            //Console.WriteLine((DateTime.Now - start).TotalMicroseconds);
+            
             //Turnstile.Run();
         }
     }
