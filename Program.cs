@@ -12,8 +12,8 @@ namespace hackerrank
             start = DateTime.Now;
             StaleServerCount.RunBruteforce();
             Console.WriteLine("Brute force: "+(DateTime.Now - start).TotalMicroseconds);
-            StaleServerCount.Run();
             start = DateTime.Now;
+            StaleServerCount.Run();
             Console.WriteLine("Optimize :"+(DateTime.Now - start).TotalMicroseconds);
 
             //start = DateTime.Now;
