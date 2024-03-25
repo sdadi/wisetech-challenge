@@ -1,4 +1,6 @@
-﻿namespace hackerrank
+﻿using System.Runtime.InteropServices;
+
+namespace hackerrank
 {
     internal class Program
     {
@@ -6,8 +8,13 @@
         {
             //FizzBuzz.Run();
             //StaleServerCount.Run();
-            //LowestSalePrice.Run();
-            Turnstile.Run();
+            DateTime start = DateTime.Now;
+            LowestSalePrice.RunBruteForce();
+            Console.WriteLine((DateTime.Now - start).TotalMicroseconds);
+            start = DateTime.Now;
+            LowestSalePrice.Run();
+            Console.WriteLine((DateTime.Now - start).TotalMicroseconds);
+            //Turnstile.Run();
         }
     }
 }
